@@ -14,8 +14,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.err.println("Usage: hadoopex <input path> <output path>");
-            System.exit(-1);
+            args = new String[]{"/Users/zhupan/github/hadoop-mapreduce-example/input", "/Users/zhupan/github/hadoop-mapreduce-example/output"};
+//            System.err.println("Usage: hadoopex <input path> <output path>");
+//            System.exit(-1);
         }
 
         Job job = new Job();
